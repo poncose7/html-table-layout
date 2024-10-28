@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table border="0" height="560" width="560" class="main-table" cellspacing="0" cellpadding="0">
+        <tr >
+            <td colspan="3" class="table-title">Title of the table</td>
+            <!-- <td></td>
+            <td></td> -->
+        </tr>
+        <!-- 1st row -->
+         <tr >
+            <td rowspan="3" class="row-1">Apple</td>
+            <td width="350px" class="row-2">Mango</td>
+            <td class="row-3">Banana</td>
+            
+         </tr>
+         <!-- 2nd row -->
+          <tr class="row-2">
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/iDA0kF5lrVk?si=9AOBTiQFjuUFg3jm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </td>
+           
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/aNC6LY34yVM?si=1thC6-TmjzItzShV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+          </tr>
+          <!-- 3rd row -->
+           <tr class="row-3">
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/f3uCSh6LIY0?si=pFdn7a_e807LdZt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+            
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/iuSKGuWWNGA?si=KqP33gnBHBldNHq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+           </tr>
+    </table>
+    <div class="table-2">
+        <table  height="600" width="600" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td height="200" width="600">
+                   <table height="200" width="600" bgcolor="#D6A2E8" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td bgcolor="#CAD3C8">col 01</td>
+                        <td bgcolor="#F8EFBA">col 02</td>
+                        <td bgcolor="#FD7272">Col 03</td>
+                    </tr>
+                   </table>
+                </td>
+               
+            </tr>
+            <tr>
+                <td height="400" width="600" >
+                    <table bgcolor="#4bcffa" height="400" width="600" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td height="400" width="200" bgcolor="#ffc048">col 01</td>
+                            <td height="400" width="400" bgcolor="#575fcf">
+                                <table height="400" width="400" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td height="200" width="400" bgcolor="#485460">Divided-1</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td height="200" width="400">Divided-2</td>
+                                    </tr>
+                                   
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="form-table">
+        <form action="">
+            <table border="5" align="center" class="table-3" cellspacing="0" cellpading="0">
+                <tr>
+                    <td colspan="2" align="center">Student Registration Form</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" placeholder="Full Name" ></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="********"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="example@gmail.com"></td>
+                </tr>
+                <tr>
+                   <td>Mobile</td>
+                   <td><input type="text" placeholder="+880"></td>
+
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="a" checked>Male
+                        <input type="radio" name="a">Female
+                        <input type="radio" name="a">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Education</td>
+                    <td>
+                        <input type="checkbox" checked>SSC
+                        <input type="checkbox" checked>HSC
+                        <input type="checkbox">BBA
+                        <input type="checkbox">MBA
+                    </td>
+                </tr>
+                <tr>
+                    <td>Division</td>
+                    <td>
+                        <select>
+                            <option>Dhaka</option>
+                            <option>Rajshahi</option>
+                            <option>Khulna</option>
+                            <option>Borishal</option>
+                            <option>Sylhet</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <textarea cols="30" rows="5">
+
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="form-submit">
+                        <input type="submit" value="Registration">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
